@@ -1,0 +1,16 @@
+.Chain-content-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 148px;
+}
+
+.Chain-content {
+  width: 100%;
+  min-width: 1350px;
+  min-height: 100%;
+  background: #2c2b2b;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 30px;
+}

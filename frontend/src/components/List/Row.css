@@ -1,0 +1,30 @@
+.Row {
+  color: #b5aeae;
+  cursor: pointer;
+}
+
+.Row-synced {
+  color: #fff;
+}
+
+.Row-pinned td:first-child {
+  border-left: 3px solid #e6007a;
+  padding-left: 10px;
+}
+
+.Row-pinned td:last-child {
+  border-right: 3px solid #e6007a;
+  padding-right: 10px;
+}
+
+.Row-pinned.Row-synced {
+  color: #e6007a;
+}
+
+.Row-stale {
+  color: #555;
+}
+
+.Row:hover {
+  background-color: #1e1e1e;
+}

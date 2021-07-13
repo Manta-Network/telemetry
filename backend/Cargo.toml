@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "core",
+]
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+lto = true
+panic = "abort"

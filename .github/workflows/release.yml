@@ -1,0 +1,24 @@
+---
+name: release
+on:
+  push:
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]+*
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: build
+        working-directory: ./backend
+        run: cargo build --verbose --release
+      - name: test
+        working-directory: ./backend
+        run: cargo test --verbose
+      - name: publish
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            backend/target/release/telemetry

@@ -1,0 +1,14 @@
+.Icon {
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  text-align: center;
+  line-height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.Icon svg, .Icon-symbol-root symbol {
+  width: 1em;
+  height: 1em;
+}
